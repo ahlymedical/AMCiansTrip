@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AMCians Trip to Ain Sokhna – The G Hotel</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
     /* Keyframes for animations */
     @keyframes fadeIn {
@@ -31,7 +31,7 @@
 
     /* General Body Styling */
     body {
-        font-family: 'Poppins', 'Cairo', sans-serif;
+        font-family: 'Poppins', sans-serif;
         margin: 0;
         padding: 40px 20px;
         display: flex;
@@ -54,7 +54,6 @@
         box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
         border-radius: 25px;
         box-sizing: border-box;
-        /* The restored green top border */
         border-top: 15px solid #28a745;
         animation: fadeIn 1s ease-out;
     }
@@ -110,14 +109,6 @@
         margin: 25px auto 0 auto;
         animation: fadeInUp 1s ease-out 0.4s;
         animation-fill-mode: backwards;
-    }
-    
-    .arabic-text {
-        font-family: 'Cairo', sans-serif;
-        font-size: 16px;
-        color: #666;
-        line-height: 1.8;
-        margin-top: 8px;
     }
 
     .event-info {
@@ -181,18 +172,12 @@
     }
 
     .day-card h3 {
-        margin: 0 0 10px 0;
+        margin: 0 0 25px 0;
         font-size: 26px;
         color: #00796b;
         font-weight: 700;
         display: flex;
         align-items: center;
-    }
-    
-    .day-card h3 .arabic-subtitle {
-        font-size: 20px;
-        margin-top: 5px;
-        color: #333;
     }
 
     .day-card h3 .icon {
@@ -210,15 +195,15 @@
     .activity-list {
         list-style: none;
         padding: 0;
-        margin: 25px 0 0 0;
+        margin: 0;
     }
 
     .activity-list li {
         font-size: 18px;
         color: #444;
-        margin-bottom: 20px;
+        margin-bottom: 18px;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         transition: color 0.3s ease;
     }
     
@@ -238,16 +223,10 @@
         text-align: center;
         flex-shrink: 0;
         transition: transform 0.3s ease;
-        margin-top: 5px;
     }
     
     .activity-list li:hover .activity-icon {
         transform: scale(1.2);
-    }
-    
-    .activity-text {
-        display: flex;
-        flex-direction: column;
     }
 
     /* Footer */
@@ -264,7 +243,7 @@
     }
 
     .footer strong {
-        color: #00796b;
+        color: #28a745; /* Green color for the final sentence */
         font-weight: 600;
     }
 </style>
@@ -278,95 +257,40 @@
         <h1>AMCians Trip to Ain Sokhna</h1>
         <div class="hotel-chip">The G Hotel</div>
         
-        <div class="event-info">20–22 November 2025</div>
+        <div class="event-info">🗓️ 20–22 November 2025</div>
         
         <p class="subtitle"><strong>Together We GROW</strong><br>Pack your bags, AMCians — it’s time to recharge, connect, and have some fun by the sea!</p>
-        <p class="arabic-text" dir="rtl"><strong>مع بعض بنكبر وننجح</strong><br>يلا بينا يا فريق AMC نحضّر شنطنا — جه الوقت نفصل ونشحن طاقتنا ونستمتع بأحلى الأوقات على البحر!</p>
     </div>
 
     <div class="day-grid">
         
         <div class="day-card">
-            <h3>
-                <span class="icon">🗓️</span>
-                <div class="activity-text">
-                    Day 1 – Thursday, Nov 20: Arrival & Chill Vibes
-                    <span class="arabic-subtitle" dir="rtl">اليوم الأول – الخميس، 20 نوفمبر: وصول و استجمام</span>
-                </div>
-            </h3>
+            <h3><span class="icon">🗓️</span> Day 1 – Thursday, Nov 20: Arrival & Chill Vibes</h3>
             <ul class="activity-list">
-                <li>
-                    <span class="activity-icon">🚌</span>
-                    <div class="activity-text">Morning departure from AMC HQ<span class="arabic-text" dir="rtl">التحرك الصبح من مقر الشركة</span></div>
-                </li>
-                <li>
-                    <span class="activity-icon">🏨</span>
-                    <div class="activity-text">Check-in at the hotel<span class="arabic-text" dir="rtl">تسجيل الدخول في الفندق</span></div>
-                </li>
-                <li>
-                    <span class="activity-icon">🌊</span>
-                    <div class="activity-text">Relax, swim, and enjoy the day your way<span class="arabic-text" dir="rtl">استرخاء، سباحة، وقضي اليوم بمزاجك</span></div>
-                </li>
-                <li>
-                    <span class="activity-icon">🍽️</span>
-                    <div class="activity-text">Dinner & cozy evening gathering<span class="arabic-text" dir="rtl">عشاء وقاعدة رايقة بالليل</span></div>
-                </li>
+                <li><span class="activity-icon">🚌</span> Morning departure from AMC HQ</li>
+                <li><span class="activity-icon">🏨</span> Check-in at the hotel</li>
+                <li><span class="activity-icon">🌊</span> Relax, swim, and enjoy the day your way</li>
+                <li><span class="activity-icon">🍽️</span> Dinner & cozy evening gathering</li>
             </ul>
         </div>
 
         <div class="day-card">
-            <h3>
-                <span class="icon">🎉</span>
-                <div class="activity-text">
-                    Day 2 – Friday, Nov 21: Team Building Day!
-                    <span class="arabic-subtitle" dir="rtl">اليوم الثاني – الجمعة، 21 نوفمبر: يوم كله مفاجآت وأنشطة!</span>
-                </div>
-            </h3>
+            <h3><span class="icon">🎉</span> Day 2 – Friday, Nov 21: Team Building Day!</h3>
             <ul class="activity-list">
-                <li>
-                    <span class="activity-icon">🍳</span>
-                    <div class="activity-text">Breakfast with a view<span class="arabic-text" dir="rtl">فطار على أحلى فيو</span></div>
-                </li>
-                <li>
-                    <span class="activity-icon">🕌</span>
-                    <div class="activity-text">Friday Prayer<span class="arabic-text" dir="rtl">صلاة الجمعة</span></div>
-                </li>
-                <li>
-                    <span class="activity-icon">🤝</span>
-                    <div class="activity-text">Team Building Event kicks off right after Friday Prayer at the Open Area Restaurant<span class="arabic-text" dir="rtl">هنبدا فعاليات الـ Team Building على طول بعد الصلاة في المطعم المفتوح</span></div>
-                </li>
-                <li>
-                    <span class="activity-icon">🏆</span>
-                    <div class="activity-text">Fun challenges, teamwork games & great prizes<span class="arabic-text" dir="rtl">تحديات ممتعة، ألعاب جماعية، وجوايز جامدة</span></div>
-                </li>
-                <li>
-                    <span class="activity-icon">⭐</span>
-                    <div class="activity-text">Hosted by our professional team-building partner<span class="arabic-text" dir="rtl">كل ده مع شريكنا المحترف في تنظيم أنشطة بناء الفريق</span></div>
-                </li>
-                <li>
-                    <span class="activity-icon">✨</span>
-                    <div class="activity-text">Dinner & evening celebration under the stars<span class="arabic-text" dir="rtl">عشاء وسهرة واحتفال تحت النجوم</span></div>
-                </li>
+                <li><span class="activity-icon">🍳</span> Breakfast with a view</li>
+                <li><span class="activity-icon">🕌</span> Friday Prayer</li>
+                <li><span class="activity-icon">🤝</span> Team Building Event kicks off right after Friday Prayer at the Open Area Restaurant</li>
+                <li><span class="activity-icon">🏆</span> Fun challenges, teamwork games & great prizes</li>
+                <li><span class="activity-icon">⭐</span> Hosted by our professional team-building partner</li>
+                <li><span class="activity-icon">✨</span> Dinner & evening celebration under the stars</li>
             </ul>
         </div>
 
         <div class="day-card">
-            <h3>
-                <span class="icon">👋</span>
-                <div class="activity-text">
-                    Day 3 – Saturday, Nov 22: Wrap-Up & Return
-                    <span class="arabic-subtitle" dir="rtl">اليوم الثالث – السبت، 22 نوفمبر: الختام والرجوع</span>
-                </div>
-            </h3>
+            <h3><span class="icon">👋</span> Day 3 – Saturday, Nov 22: Wrap-Up & Return</h3>
             <ul class="activity-list">
-                <li>
-                    <span class="activity-icon">📸</span>
-                    <div class="activity-text">Breakfast & group photo<span class="arabic-text" dir="rtl">فطار وصورة جماعية للذكرى</span></div>
-                </li>
-                <li>
-                    <span class="activity-icon">💼</span>
-                    <div class="activity-text">Check-out and back to Cairo with great memories!<span class="arabic-text" dir="rtl">تسجيل الخروج والرجوع للقاهرة بذكريات حلوة!</span></div>
-                </li>
+                <li><span class="activity-icon">📸</span> Breakfast & group photo</li>
+                <li><span class="activity-icon">💼</span> Check-out and back to Cairo with great memories!</li>
             </ul>
         </div>
 
@@ -374,10 +298,9 @@
 
     <div class="footer">
         <p>Get ready for 3 days of laughter, bonding, and unforgettable moments —<br><strong>because at AMC, our team is our greatest strength!</strong></p>
-        <p class="arabic-text" dir="rtl">استعدوا لـ 3 أيام من الضحك واللحظات الحلوة اللي مش هتتنسي —<br><strong>لأن في AMC، فريقنا هو سر قوتنا!</strong></p>
     </div>
 
 </div>
 
 </body>
-</html>```
+</html>
